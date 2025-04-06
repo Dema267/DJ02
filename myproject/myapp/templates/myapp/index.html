@@ -1,0 +1,21 @@
+{% extends 'myapp/base.html' %}
+
+{% block title %}Главная страница{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8">
+        <h1>Добро пожаловать на наш сайт!</h1>
+        <p class="lead">Это главная страница вашего сайта, созданного с помощью Django и Bootstrap.</p>
+        <a href="{% url 'about' %}" class="btn btn-primary">Узнать больше</a>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Новости</h5>
+                <p class="card-text">Последние новости и обновления сайта.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
